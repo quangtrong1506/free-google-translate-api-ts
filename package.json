@@ -1,6 +1,6 @@
 {
     "name": "free-google-translate-api-ts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Free google translate api library",
     "main": "index.js",
     "scripts": {
@@ -16,6 +16,9 @@
         "free-google-translate-api"
     ],
     "author": "quangtrong1506",
+    "repository": {
+        "url": "https://github.com/quangtrong1506/free-google-translate-api-ts"
+    },
     "license": "ISC",
     "types": "dist/index.d.ts",
     "files": [
