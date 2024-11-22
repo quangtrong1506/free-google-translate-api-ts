@@ -26,6 +26,7 @@ const Translate: (
         if (res.ok) {
             const data = await res.json();
             result.result = data?.[0]?.[0]?.[0] || '';
+            result.source_language = data?.[2];
         }
         return result;
     } catch (error: any) {
