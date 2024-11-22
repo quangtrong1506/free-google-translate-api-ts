@@ -1,19 +1,19 @@
-import { SourceLanguage, Translate, TranslateLanguage } from './type';
+import { SourceLanguage, TranslateLanguage, TranslateResult } from './type';
 
 const Translate: (
     text: string,
     sourceLanguage: SourceLanguage,
     translateLanguage: TranslateLanguage
-) => Promise<Translate> = async (
+) => Promise<TranslateResult> = async (
     text: string,
     sourceLanguage: SourceLanguage,
     translateLanguage: TranslateLanguage
 ) => {
-    const result: Translate = {
+    const result: TranslateResult = {
         text,
         result: '',
-        sourceLanguage: sourceLanguage,
-        translateLanguage: translateLanguage,
+        source_language: sourceLanguage,
+        translate_language: translateLanguage,
     };
     try {
         const res = await fetch(

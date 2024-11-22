@@ -1,3 +1,4 @@
-import { SourceLanguage, Translate, TranslateLanguage } from './type';
-declare const Translate: (text: string, sourceLanguage: SourceLanguage, translateLanguage: TranslateLanguage) => Promise<Translate>;
+import { SourceLanguage, TranslateLanguage, TranslateResult } from './type';
+declare const Translate: (text: string, sourceLanguage: SourceLanguage, translateLanguage: TranslateLanguage) => Promise<TranslateResult>;
+export * from './type';
 export { Translate };
