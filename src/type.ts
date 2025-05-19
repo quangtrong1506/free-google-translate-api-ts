@@ -397,13 +397,42 @@ export const languages: LanguageDetail[] = [
 export type SourceLanguage = 'auto' | Language;
 export type TranslateLanguage = Language;
 
+/**
+ * Represents the result of a translation operation.
+ */
 export type TranslateResult = {
+    /**
+     * The original text to be translated.
+     */
     text: string;
+
+    /**
+     * The translated text result.
+     */
     result: string;
+
+    /**
+     * The language code of the detected or provided source language (e.g., 'en', 'vi').
+     */
     source_language: SourceLanguage;
+
+    /**
+     * The language code of the target language to translate into (e.g., 'en', 'vi').
+     */
     translate_language: TranslateLanguage;
+
+    /**
+     * Optional error object, included if the translation request fails.
+     */
     errors?: {
+        /**
+         * A descriptive error message.
+         */
         message: string;
+
+        /**
+         * A custom error code. Default is -1 for unknown errors.
+         */
         code: number;
     };
 };
