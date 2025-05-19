@@ -4,8 +4,8 @@
     "description": "Free google translate api library",
     "main": "index.js",
     "scripts": {
-        "build": "tsc",
-        "build-min": "tsup",
+        "build-js": "tsc",
+        "build": "tsup",
         "test": "jest",
         "publish": "tsc && npm publish"
     },
